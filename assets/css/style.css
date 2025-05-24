@@ -28,6 +28,7 @@ body {
   background-color: #fff;
   color: var(--clr-white);
   overflow-x: hidden;
+  font-family: var(--ff-body);
 }
 
 :root {
@@ -373,6 +374,11 @@ html[dir=rtl] body .lmn-card {
   align-items: center;
   justify-content: flex-end;
   flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .lmn-header .lmn-navbar .navbar-collapse form {
+    justify-content: flex-start;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
   .lmn-header .lmn-navbar .navbar-collapse form {

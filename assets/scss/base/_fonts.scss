@@ -1,0 +1,8 @@
+body {
+  --ff-body:var(--ff-en);
+}
+
+html[lang="ar"] body,
+html[dir="rtl"] body {
+  --ff-body:var(--ff-ar);
+}

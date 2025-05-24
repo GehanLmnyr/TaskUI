@@ -1,0 +1,55 @@
+
+@use "prefix" as *;
+
+// =====================
+// Hero Section
+// =====================
+.#{$prefix}-hero-section {
+  --hero-section-bg: var(--clr-primary);
+  background-color: var(--hero-section-bg);
+  padding-top: 50px;
+  padding-bottom: 75px;
+
+  @media (max-width: 992px) {
+    padding-top: 30px;
+  }
+}
+
+// =====================
+// Separated Section
+// =====================
+.separated-section {
+  background-color: var(--clr-primary);
+  height: 140px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 95px;
+    width: 100%;
+    background-image: url("../images/bottom-banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 992px) {
+    height: 160px;
+  }
+}
+
+// =====================
+// Cards Section
+// =====================
+.#{$prefix}-cards-section {
+  position: relative;
+  top: -140px;
+
+  .#{$prefix}-cards-container {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+}

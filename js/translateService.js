@@ -14,6 +14,7 @@ async function setLanguage(lang) {
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   localStorage.setItem('lang', lang);
   langToggleSpan.textContent = lang === 'en' ? 'ع' : 'E';
+  langToggleSpan.style.fontFamily = lang === 'en' ? 'var(--ff-ar)' : 'var(--ff-en)';
 
   const res = await fetch(`i18n/${lang}.json`);
   const translations = await res.json();

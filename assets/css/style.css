@@ -306,6 +306,7 @@ html[dir=rtl] body .lmn-card {
   height: 30px;
   position: absolute;
   inset-inline-start: 0;
+  bottom: 0;
 }
 .lmn-header .lmn-navbar .navbar-toggler .navbar-toggler-icon {
   width: 30px;
